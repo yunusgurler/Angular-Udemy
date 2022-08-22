@@ -1,0 +1,39 @@
+<!-- <input
+type="text"
+(input)="onUpdateServerName($event)">
+<input
+type="text"
+[(ngModel)]="serverName">
+
+
+<p>{{serverName}}</p>
+
+
+<button [disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
+<p *ngIf="serverCreated; else noServer">Server was created! Name is {{serverName}}</p>
+
+<ng-template #noServer>
+  <p>No Server was created</p>
+
+
+</ng-template>
+
+<app-server *ngFor="let server of servers"></app-server>
+
+
+
+<hr>
+<input
+type
+[(ngModel)]="username">
+
+<p>{{username}}</p>
+
+<button style="height: 50px; width: 75px;"
+(click)="emptyUsername()"
+[disabled]="!username"></button> -->
+
+
+<button (click)="increaseCounter()">Display Details</button>
+<p [ngClass]="{counter: counter>5}">{{counter}}</p>
